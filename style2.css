@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #3F35F5;
+}
+
+@font-face {
+  font-family: fontich1;
+  src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face {
+  font-family: fontich4;
+  src: url("fontovi/Aeonik-Medium.ttf");
+}
+
+@font-face {
+  font-family: fontich2a;
+  src: url("fontovi/Mogata.ttf");
+}
+
+@font-face {
+  font-family: fontich2;
+  src: url("fontovi/Aeonik-Air.ttf");
+}
+
+@font-face {
+  font-family: fontich2b;
+  src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face {
+  font-family: fontich3;
+  src: url("fontovi/Aeonik-Bold.ttf");
+}
+
+span {
+  color: #FFBF43;
+}
+
+.ftr {
+  color: #fefefe;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+}
+
+.ime {
+  padding-left: 30px;
+  background-color: #fefefe;
+  font-family: fontich4;
+  color: #101010;
+  font-size: 90px;
+  letter-spacing: -8px;
+  margin-top: -5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.ime:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #3F35F5;
+  cursor: pointer;
+}
+
+#razmak1 {
+  margin-top: 20px;
+}
+
+.opis {
+  background-color: transparent;
+  margin-top: 30px;
+  padding-left: 30px;
+  font-family: fontich2b;
+  color: #fefefe;
+  width: 80vw;
+  font-size: 40px;
+  text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.opis:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+}
+
+.opisSlike1 {
+  background-color: transparent;
+  padding-left: 30px;
+  font-family: fontich2b;
+  opacity: 50%;
+  color: #3F35F5;
+  width: 50vw;
+  font-size: 40px;
+  margin-left: 600px;
+  margin-top: -600px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opisSlike1:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opisSlike2 {
+  background-color: transparent;
+  padding-left: 30px;
+  font-family: fontich2b;
+  opacity: 50%;
+  color: #3F35F5;
+  width: 45vw;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-top: -550px;
+}
+
+.opisSlike2:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opisSlike3 {
+  background-color: transparent;
+  padding-left: 30px;
+  font-family: fontich2b;
+  opacity: 50%;
+  color: #3F35F5;
+  width: 50vw;
+  font-size: 40px;
+  margin-left: 600px;
+  margin-top: -650px;
+}
+
+.opisSlike3:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opisSlike4 {
+  background-color: transparent;
+  padding-left: 30px;
+  font-family: fontich2b;
+  opacity: 50%;
+  color: #3F35F5;
+  width: 38vw;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-top: -500px;
+}
+
+.opisSlike4:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.opisSlike5 {
+  background-color: transparent;
+  padding-left: 30px;
+  font-family: fontich2b;
+  opacity: 50%;
+  color: #3F35F5;
+  width: 50vw;
+  font-size: 40px;
+  margin-left: 600px;
+  margin-top: -600px;
+}
+
+.opisSlike5:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slike {
+  background-color: white;
+  width: 100%;
+  height: 4200px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slike img {
+  max-width: 24%;
+  height: auto;
+  margin-left: 5vw;
+}
+
+.slike #slika1 {
+  max-width: 28%;
+}
+
+.slike #slika2 {
+  margin-left: 60vw;
+  margin-top: 300px;
+  max-width: 34%;
+}
+
+.slike #slika3 {
+  max-width: 28%;
+  margin-top: 300px;
+}
+
+.slike #slika4 {
+  margin-left: 50vw;
+  max-width: 44%;
+  margin-top: 300px;
+}
+
+.slike #slika5 {
+  margin-top: 300px;
+  max-width: 24%;
+}
+
+.bijelo {
+  height: 400px;
+  background-color: #fefefe;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.mojLink {
+  margin-left: 30px;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: fontich2b;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #FFBF43;
+}
+
+.mojLink:hover {
+  color: #fefefe;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#nazadLink {
+  background-color: #fefefe;
+  height: 300px;
+}
+
+.nazad {
+  background-color: #fefefe;
+  color: #3F35F5;
+  opacity: 40%;
+  font-size: 30px;
+  height: 0px;
+  margin-left: 30px;
+  margin-top: 120px;
+  text-decoration: none;
+  font-family: fontich3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nazad:hover {
+  opacity: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#kontakt {
+  background-color: #3F35F5;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#kontakt .info1 {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fefefe;
+  font-family: fontich1;
+}
+
+video {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 908px) {
+  video {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+  }
+  .opisSlike1 {
+    background-color: transparent;
+    padding-left: 30px;
+    font-family: fontich2b;
+    color: #3F35F5;
+    width: 50vw;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-top: -600px;
+  }
+  .opisSlike2 {
+    background-color: transparent;
+    padding-left: 30px;
+    font-family: fontich2b;
+    color: #3F35F5;
+    width: 45vw;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -550px;
+  }
+  .opisSlike3 {
+    background-color: transparent;
+    padding-left: 30px;
+    font-family: fontich2b;
+    color: #3F35F5;
+    width: 50vw;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-top: -650px;
+  }
+  .opisSlike4 {
+    background-color: transparent;
+    padding-left: 30px;
+    font-family: fontich2b;
+    color: #3F35F5;
+    width: 38vw;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -500px;
+  }
+  .opisSlike5 {
+    background-color: transparent;
+    padding-left: 30px;
+    font-family: fontich2b;
+    color: #3F35F5;
+    width: 50vw;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-top: -600px;
+  }
+  #slika1 {
+    max-width: 58vw;
+    opacity: 40%;
+  }
+  #slika2 {
+    margin-left: 60vw;
+    margin-top: 300px;
+    max-width: 58vw;
+    opacity: 40%;
+  }
+  #slika3 {
+    max-width: 58vw;
+    margin-top: 300px;
+    opacity: 40%;
+  }
+  #slika4 {
+    margin-left: 50vw;
+    max-width: 58vw;
+    margin-top: 300px;
+    opacity: 40%;
+  }
+  #slika5 {
+    margin-top: 300px;
+    max-width: 58vw;
+    opacity: 40%;
+  }
+  .ime {
+    background-color: transparent;
+    width: 90vw;
+    margin-left: -2.5vw;
+    color: #fefefe;
+    margin-top: 30px;
+    font-size: 60px;
+    letter-spacing: -5px;
+    text-align: center;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  .ime:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    color: #101010;
+  }
+  .ime:active {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: rotate(-0.9deg);
+            transform: rotate(-0.9deg);
+  }
+  span {
+    font-weight: bold;
+    color: #101010;
+  }
+  #razmak1 {
+    margin-top: 70px;
+  }
+  .opis {
+    width: 80vw;
+    margin-left: 2.5vw;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 40px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .opis:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  #radovi {
+    background-color: #fefefe;
+    height: 610px;
+    margin-left: -50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #radovi .rad1 {
+    text-decoration: none;
+    background-color: transparent;
+    width: 0px;
+    margin-top: 50px;
+    margin-left: 120px;
+    font-family: fontich2b;
+    font-size: 40px;
+    color: #3F35F5;
+  }
+  #radovi .rad1:hover {
+    cursor: pointer;
+    font-family: fontich3;
+    letter-spacing: -2px;
+  }
+  #kontakt {
+    background-color: #3F35F5;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 25px;
+    margin-left: 20px;
+  }
+  #kontakt .info1 {
+    margin-top: -25px;
+    background-color: transparent;
+    color: #fefefe;
+    font-family: fontich1;
+  }
+  #kontakt .ftr {
+    color: #101010;
+    letter-spacing: 0px;
+  }
+}
+/*# sourceMappingURL=style2.css.map */

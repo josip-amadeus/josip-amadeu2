@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+//font-family: 'Righteous', cursive;
+
+$paleta: (
+    zelenkasta: #C8FCEA,
+    narancasta:  #FFBF43,
+    ruzicasta: #F2ECFF,
+    crna: #101010,
+    plava: #3F35F5,
+    bijela: #fefefe
+);
+
+@function boja($ime-boje){
+    @return map-get($paleta, $ime-boje);
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    background-color: boja(plava);
+}
+
+@font-face{
+	font-family: fontich1;
+	src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face{
+	font-family: fontich4;
+	src: url("fontovi/Aeonik-Medium.ttf");
+}
+
+@font-face{ 
+	font-family: fontich2a;
+	src: url("fontovi/Mogata.ttf");
+}
+@font-face{ 
+	font-family: fontich2;
+	src: url("fontovi/Aeonik-Air.ttf");
+}
+@font-face{ 
+	font-family: fontich2b;
+	src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face{ 
+	font-family: fontich3;
+	src: url("fontovi/Aeonik-Bold.ttf");
+}
+
+span{
+	color: boja(narancasta); 
+}
+
+.ftr{
+    color: boja(bijela);
+    font-weight: bold;
+    letter-spacing: 0.75px;
+}
+
+
+.ime{  
+    padding-left: 30px;
+    background-color: boja(bijela);
+	font-family: fontich4;
+    color: boja(crna); 
+    font-size: 90px; 
+    letter-spacing: -8px;  
+    margin-top: -5px;
+    transition: .3s;  
+}
+
+.ime:hover{ 
+    transition: .3s; 
+    color: boja(plava); 
+    cursor: pointer;
+}
+
+#razmak1{
+    margin-top: 20px;
+}
+ 
+
+.opis{ 
+    background-color: transparent;
+    margin-top: 30px;
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(bijela);
+    width: 80vw;
+    font-size: 40px;
+    text-align: left; 
+    transition: 0.3s;  
+}
+
+.opis:hover{
+    transition: 0.5s;  
+    transform: translateX(7px);
+}
+ 
+
+.opisSlike1{ 
+    background-color: transparent;  
+    padding-left: 30px;
+	font-family: fontich2b;
+    opacity: 50%;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -600px; 
+    transition: 0.5s;
+}
+.opisSlike1:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+
+.opisSlike2{ 
+    background-color: transparent;  
+    padding-left: 30px;
+	font-family: fontich2b;
+    opacity: 50%;
+    color: boja(plava);
+    width: 45vw;
+    font-size: 40px;  
+    margin-left: 50px;  
+    margin-top: -550px; 
+}
+.opisSlike2:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.opisSlike3{ 
+    background-color: transparent; 
+    padding-left: 30px;
+	font-family: fontich2b;
+    opacity: 50%;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -650px; 
+}
+
+.opisSlike3:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.opisSlike4{ 
+    background-color: transparent;  
+    padding-left: 30px;
+	font-family: fontich2b;
+    opacity: 50%;
+    color: boja(plava);
+    width: 38vw;
+    font-size: 40px;  
+    margin-left: 50px;  
+    margin-top: -500px; 
+}
+.opisSlike4:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.opisSlike5{ 
+    background-color: transparent;  
+    padding-left: 30px;
+	font-family: fontich2b;
+    opacity: 50%;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -600px;   
+}
+.opisSlike5:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+ 
+
+.slike{
+    background-color: white;
+    width: 100%;
+    height: 4200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+
+    img {
+        max-width: 24%;
+        height: auto;
+        margin-left: 5vw;
+      }
+
+      #slika1{  
+        max-width: 28%;  
+        
+            }
+ 
+            #slika2{ 
+                margin-left: 60vw;
+                margin-top: 300px;
+                max-width: 34%; 
+                    }
+                    #slika3{ 
+                        max-width: 28%; 
+                        margin-top: 300px;
+                            }
+
+                            #slika4{
+                                margin-left: 50vw;
+                                max-width: 44%; 
+                                margin-top: 300px;
+                                      }
+                                      #slika5{ 
+                                        margin-top: 300px;
+                                        max-width: 24%; 
+                                              }
+                        
+ 
+ 
+}
+
+
+.bijelo{
+    height: 400px;
+    background-color: boja(bijela);  
+}
+
+section{
+    margin-top: 50px; 
+}
+
+ 
+.mojLink{ 
+    margin-left: 30px;
+    text-decoration: none;
+    background-color: transparent; 
+	font-family: fontich2b; 
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left; 
+    transition: 0.3s;  
+    color:boja(narancasta); 
+}
+
+.mojLink:hover{
+    color: boja(bijela); 
+    transition: 0.2s;
+}
+ 
+#nazadLink{
+
+    background-color: boja(bijela);
+    height: 300px;
+
+}
+.nazad{ 
+    background-color: boja(bijela);
+    color: boja(plava);
+    opacity: 40%;
+    font-size: 30px; 
+    height: 0px;
+    margin-left: 30px;   
+    margin-top: 120px;   
+    text-decoration: none; 
+	font-family: fontich3;
+    transition: 0.3s;
+}
+
+.nazad:hover{
+    opacity: 100%;
+    transition: .5s;
+}
+  
+
+#kontakt{ 
+    background-color: boja(plava);
+    height: 70px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+
+    .info1{
+        margin-top:20px;
+        background-color: transparent;
+        color: boja(bijela);
+        font-family: fontich1;
+    }
+
+}
+
+video{  
+    margin-left: 150px;
+    margin-top: 50px;
+}
+ 
+
+
+@media screen and (max-width: 908px) {
+    video{  
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /// 
+.opisSlike1{ 
+    background-color: transparent; 
+    color: boja(blue);
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -600px;
+}
+
+
+.opisSlike2{ 
+    background-color: transparent; 
+    color: boja(blue);
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(plava);
+    width: 45vw;
+    font-size: 40px;  
+    margin-left: 50px;  
+    margin-top: -550px;
+}
+
+
+.opisSlike3{ 
+    background-color: transparent; 
+    color: boja(blue); 
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -650px;
+}
+.opisSlike4{ 
+    background-color: transparent; 
+    color: boja(blue);
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(plava);
+    width: 38vw;
+    font-size: 40px;  
+    margin-left: 50px;  
+    margin-top: -500px;
+}
+.opisSlike5{ 
+    background-color: transparent; 
+    color: boja(blue);
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(plava);
+    width: 50vw;
+    font-size: 40px;  
+    margin-left: 600px;  
+    margin-top: -600px;  
+}
+
+
+#slika1{  
+    max-width: 58vw; 
+    opacity:40%;
+    
+        }
+        #slika2{ 
+            margin-left: 60vw;
+            margin-top: 300px;
+            max-width: 58vw; 
+            opacity:40%;
+                }
+                #slika3{ 
+                    max-width: 58vw; 
+                    margin-top: 300px;
+                    opacity:40%;
+                        }
+
+                        #slika4{
+                            margin-left: 50vw;
+                            max-width: 58vw; 
+                            margin-top: 300px;
+                            opacity:40%;
+                                  }
+                                  #slika5{ 
+                                    margin-top: 300px;
+                                    max-width: 58vw; 
+                                    opacity:40%;
+                                          }
+                    
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+    
+     /////////////////////////////   IME    /////////////////////////////////////
+    .ime{ 
+        background-color: transparent; 
+        width: 90vw; 
+        margin-left: -2.5vw;  
+        color: boja(bijela);
+        margin-top: 30px; 
+        font-size: 60px; 
+        letter-spacing: -5px;  
+        text-align: center; 
+        transition: .6s; 
+    }
+
+    .ime:hover{  
+        transition: .2s; 
+        cursor: pointer;
+        color: boja(crna); 
+     }
+
+    .ime:active{ 
+        transition: .2s;   
+        transform: rotate(-0.9deg);
+     }
+
+     span{
+        font-weight: bold; 
+        color: boja(crna);
+    }
+
+ 
+    #razmak1{
+        margin-top: 70px;
+    }
+ 
+
+     /////////////////////////////   OPIS    /////////////////////////////////////
+     .opis{  
+        color: boja(druga);
+        width: 80vw;
+        margin-left: 2.5vw;  
+        font-size: 18px;
+        text-align: left; 
+        margin-top: 40px;
+        transition: 0.3s;  
+    }
+
+    .opis:hover{
+        transition: 0.5s;  
+        transform: translateY(7px);
+    }
+
+    #radovi{
+        background-color: boja(bijela); 
+        height: 610px;  
+        margin-left: -50px;
+        display: flex;
+        flex-direction: column;  
+        .rad1{
+            text-decoration: none;
+            background-color: transparent; 
+            width: 0px;
+            margin-top: 50px;
+            margin-left: 120px;
+            font-family: fontich2b;
+            font-size: 40px;
+            color: boja(plava); 
+        }
+
+        .rad1:hover{ 
+            cursor: pointer;
+            font-family: fontich3;
+            letter-spacing: -2px;
+        }
+    }
+
+    
+#kontakt{
+    background-color: boja(plava);
+    height: 120px; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-left: 20px;
+
+    .info1{
+        margin-top: -25px;
+        background-color: transparent;
+        color: boja(bijela);
+        font-family: fontich1;
+    }
+
+    .ftr{
+        color: boja(crna); 
+        letter-spacing: 0px;
+    }
+    
+
+}
+
+    
+    
+    
+
+  }

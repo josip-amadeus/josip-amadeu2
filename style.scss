@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+//font-family: 'Righteous', cursive;
+
+$paleta: (
+    zelenkasta: #C8FCEA,
+    narancasta:  #FFBF43,
+    ruzicasta: #F2ECFF,
+    crna: #101010,
+    plava: #3F35F5,
+    bijela: #fefefe
+);
+
+@function boja($ime-boje){
+    @return map-get($paleta, $ime-boje);
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    background-color: boja(plava);
+}
+
+@font-face{
+	font-family: fontich1;
+	src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face{
+	font-family: fontich4;
+	src: url("fontovi/Aeonik-Medium.ttf");
+}
+
+@font-face{ 
+	font-family: fontich2a;
+	src: url("fontovi/Mogata.ttf");
+}
+@font-face{ 
+	font-family: fontich2;
+	src: url("fontovi/Aeonik-Air.ttf");
+}
+@font-face{ 
+	font-family: fontich2b;
+	src: url("fontovi/Aeonik-Light.ttf");
+}
+
+@font-face{ 
+	font-family: fontich3;
+	src: url("fontovi/Aeonik-Bold.ttf");
+}
+
+span{
+	color: boja(narancasta); 
+}
+
+.ftr{
+    color: boja(bijela);
+    font-weight: bold;
+    letter-spacing: 0.75px;
+}
+
+ 
+.ime{  
+    padding-left: 30px;
+    background-color: boja(bijela); 
+	font-family: fontich4;
+    color: boja(crna); 
+    font-size: 90px; 
+    letter-spacing: -8px;  
+    margin-top: -5px;
+    transition: .3s;  
+}
+
+.ime:hover{ 
+    transition: .3s; 
+    color: boja(plava); 
+    cursor: pointer;
+}
+
+#razmak1{
+    margin-top: 20px;
+}
+ 
+
+.opis{ 
+    background-color: transparent;
+    margin-top: 30px;
+    padding-left: 30px;
+	font-family: fontich2b;
+    color: boja(bijela);
+    width: 80vw;
+    font-size: 40px;
+    text-align: left; 
+    transition: 0.3s;  
+}
+
+.opis:hover{
+    transition: 0.5s;  
+    transform: translateX(7px);
+}
+
+#crnina{
+    margin-top: 150px;
+}
+ 
+
+#radovi{
+    background-color: boja(bijela); 
+    height: 810px; 
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+
+    
+.rad1{
+    text-decoration: none;
+    background-color: transparent; 
+    width: 0px;
+    margin-top: 50px;
+    margin-left: 120px;
+    font-family: fontich2b;
+    font-size: 70px;
+    color: boja(plava); 
+}
+
+.rad1:hover{ 
+    cursor: pointer;
+    font-family: fontich3;
+    letter-spacing: -3px;
+}
+
+    
+}
+
+
+#kontakt{
+    background-color: boja(plava);
+    height: 50px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+
+    .info1{
+        background-color: transparent;
+        color: boja(bijela);
+        font-family: fontich1;
+    }
+
+}
+
+
+ 
+
+
+@media screen and (max-width: 908px) {
+
+    
+     /////////////////////////////   IME    /////////////////////////////////////
+    .ime{ 
+        background-color: transparent; 
+        width: 90vw; 
+        margin-left: -2.5vw;  
+        color: boja(bijela);
+        margin-top: 30px; 
+        font-size: 65px; 
+        letter-spacing: -5px;  
+        text-align: center; 
+        transition: .6s; 
+    }
+
+    .ime:hover{  
+        transition: .2s; 
+        cursor: pointer;
+        color: boja(crna); 
+     }
+
+    .ime:active{ 
+        transition: .2s;   
+        transform: rotate(-0.9deg);
+     }
+
+     span{
+        font-weight: bold; 
+        color: boja(crna);
+    }
+
+ 
+    #razmak1{
+        margin-top: 70px;
+    }
+ 
+
+     /////////////////////////////   OPIS    /////////////////////////////////////
+     .opis{  
+        color: boja(druga);
+        width: 80vw;
+        margin-left: 2.5vw;  
+        font-size: 18px;
+        text-align: left; 
+        margin-top: 40px;
+        transition: 0.3s;  
+    }
+
+    .opis:hover{
+        transition: 0.5s;  
+        transform: translateY(7px);
+    }
+
+    #radovi{
+        background-color: boja(bijela); 
+        height: 610px;  
+        margin-left: -50px;
+        display: flex;
+        flex-direction: column;  
+        .rad1{
+            text-decoration: none;
+            background-color: transparent; 
+            width: 0px;
+            margin-top: 50px;
+            margin-left: 120px;
+            font-family: fontich2b;
+            font-size: 40px;
+            color: boja(plava); 
+        }
+
+        .rad1:hover{ 
+            cursor: pointer;
+            font-family: fontich3;
+            letter-spacing: -2px;
+        }
+    }
+
+    
+#kontakt{
+    background-color: boja(plava);
+    height: 120px; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-left: 20px;
+
+    .info1{
+        margin-top: -25px;
+        background-color: transparent;
+        color: boja(bijela);
+        font-family: fontich1;
+    }
+
+    .ftr{
+        color: boja(crna); 
+        letter-spacing: 0px;
+    }
+    
+
+}
+
+    
+    
+    
+
+  }
